@@ -1,0 +1,70 @@
+/*CONFIGS-GERAIS*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8fafc;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*CABEÇALHO*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0f172a;
+    color: #ffffff;
+}
+header ul {
+    list-style: none;
+}
+header li {
+    padding: 5px;
+}
+header a {
+    text-decoration: none;
+    color: #8ae6fd;
+    background-color: #2563eb;
+    border-radius: 12px;
+    padding: 2px;
+}
+a:hover {
+    color: #2563eb;
+    background-color: #8ae6fd;
+    border-radius: 12px;
+    padding: 4px;
+}
+/*SEÇÕES*/
+section {
+    padding: 40px 20px;
+}
+/*TITULOS E SUB-TITULOS*/
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+/*FORMULÁRIO*/
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+/*INPUTS*/
+input {
+    padding: 12px;
+    margin: 2px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+input:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+/*RODA-PÉ*/
+footer {
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TechDay 2026</h1>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#cronograma">Cronograma</a></li>
+            <li><a href="#inscricao">Inscrição</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="sobre">
+            <h2>O Evento</h2>
+            <p>
+                Será um dia inteiro de palestras imperdíveis sobre <strong>Desenvolvimento Web</strong>,
+                <strong>Inteligência Artificial</strong> e <strong>Robótica</strong>.
+            </p>
+        </section>
+        <section id="cronograma">
+            <h2>Programação</h2>
+            <ol>
+                <li>| 08:00 - 10:00 | Abertura e Tendências do Mercado</li>
+                <li>| 10:00 - 12:00 | Ferramentas Práticas e Produtividade</li>
+                <li>| 12:00 - 14:00 | Almoço Livre</li>
+                <li>| 14:00 - 16:00 | Painel de Encerramento e Perguntas & Respostas</li>
+            </ol>
+        </section>
+        <section id="inscricao">
+            <h2>Garanta sua Vaga</h2>
+            <form action="" method="post">
+                <fieldset class="formulario">
+                    <legend>Inscrição</legend>
+                    <!-- Nome do usuário -->
+                    <div class="form-grid">
+                        <label for="nome-completo">Nome Completo: </label>
+                        <input type="text" name="nome" id="nome-completo" placeholder="Digite Seu Nome" required>
+                    </div>
+                    <!-- Email do usuário -->
+                    <div class="form-grid">
+                        <label for="email">Seu Email: </label>
+                        <input type="text" name="email" id="email" placeholder="Digite Seu Melhor Email" required>
+                    </div>
+                    <!-- Contato do usuário -->
+                    <div class="form-grid">
+                        <label for="contato">Contato: </label>
+                        <input type="number" name="contato" id="contato" placeholder="Digite Seu Número" required>
+                    </div>
+                    <!-- Data de Nascimento -->
+                     <div class="form-grid">
+                        <label for="nascimento">Data de Nascimento: </label>
+                        <input type="date" name="nascimento" id="nascimento" required>
+                     </div>
+                     <div class="botoes-container">
+                        <button type="submit" class="btn-enviar">Finalizar Inscrição</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <address>
+            2026 Senai - Londrina-Pr. <br>
+            R. Belém, 844 - Centro, Londrina - PR, 86026-040
+        </address>
+            <p><small>© Todos os direitos reservados.</small></p> 
+            <p> 
+            Nenhuma parte desta publicação/conteúdo pode ser reproduzida, distribuída ou transmitida 
+            por qualquer forma ou por qualquer meio, incluindo fotocópia, gravação ou outros 
+            métodos eletrônicos ou mecânicos, sem a prévia autorização por escrito do proprietário 
+            dos direitos autorais, exceto no caso de breves citações incluídas em revisões críticas e 
+            alguns outros usos não comerciais permitidos pela lei de direitos autorais.
+        </p>
+    </footer>
+</body>
+</html>
