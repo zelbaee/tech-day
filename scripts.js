@@ -1,6 +1,16 @@
 const precoIngresso = 100;
 const form = document.getElementById("form-inscricao");
 
+let nomeSalvo = localStorage.getItem("techday_nome");
+    if (nomeSalvo !== null) {
+        form.style.display = "none";
+        const sessaoInscricao = document.getElementById("inscricao");
+        const mensagemSucesso = document.createElement("h3");
+        mensagemSucesso.innerText = "Inscrição confirmada! Bem-vindo(a) "+nomeSalvo+"!";
+        mensagemSucesso.style.color = "green";
+        sessaoInscricao.appendChild(mensagemSucesso);
+    }
+
 function processarInscricao(nome, idade, prossuiCupom) {
     let precoFinal = precoIngresso;
 
@@ -47,20 +57,16 @@ form.addEventListener(
         if(formularioValido) {
         localStorage.setItem("techday_nome", valorNome);
         localStorage.setItem("techday_email", valorEmail);
+        form.style.display = "none";
+        const sessaoInscricao = document.getElementById("inscricao");
+        const mensagemSucesso = document.createElement("h3");
+        mensagemSucesso.innerText = "Inscrição confirmada! Bem-vindo(a) "+valorNome+"!";
+        mensagemSucesso.style.color = "green";
+        sessaoInscricao.appendChild(mensagemSucesso);
 
         console.log("Dados salvos no LocalStorage com sucesso!");
         console.log("Nome salvo:", localStorage.getItem("techday_nome"));
         console.log("Email salvo:", localStorage.getItem("techday_email"));
             }
-
-        if(formularioValido) {
-        localStorage.setItem("techday_nome", valorNome);
-        localStorage.setItem("techday_email", valorEmail);
-
-        console.log("Dados salvos no LocalStorage com sucesso!");
-        console.log("Nome salvo:", localStorage.getItem("techday_nome"));
-        console.log("Email salvo:", localStorage.getItem("techday_email"));
-            }
-        
     }
 )
